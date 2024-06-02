@@ -1,0 +1,142 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Chuyen nganh\\Dotnet\\PRN231\\Week4\\ReservationWebAPI_Demo\\ViewReservation\\ViewReservation.csproj": {}
+  },
+  "projects": {
+    "E:\\Chuyen nganh\\Dotnet\\PRN231\\Week4\\ReservationWebAPI_Demo\\ReservarionWebAPI\\ReservarionWebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Chuyen nganh\\Dotnet\\PRN231\\Week4\\ReservationWebAPI_Demo\\ReservarionWebAPI\\ReservarionWebAPI.csproj",
+        "projectName": "ReservarionWebAPI",
+        "projectPath": "E:\\Chuyen nganh\\Dotnet\\PRN231\\Week4\\ReservationWebAPI_Demo\\ReservarionWebAPI\\ReservarionWebAPI.csproj",
+        "packagesPath": "C:\\Users\\lvttr\\.nuget\\packages\\",
+        "outputPath": "E:\\Chuyen nganh\\Dotnet\\PRN231\\Week4\\ReservationWebAPI_Demo\\ReservarionWebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lvttr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.30, )"
+            },
+            "Microsoft.AspNetCore.StaticFiles": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Chuyen nganh\\Dotnet\\PRN231\\Week4\\ReservationWebAPI_Demo\\ViewReservation\\ViewReservation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Chuyen nganh\\Dotnet\\PRN231\\Week4\\ReservationWebAPI_Demo\\ViewReservation\\ViewReservation.csproj",
+        "projectName": "ViewReservation",
+        "projectPath": "E:\\Chuyen nganh\\Dotnet\\PRN231\\Week4\\ReservationWebAPI_Demo\\ViewReservation\\ViewReservation.csproj",
+        "packagesPath": "C:\\Users\\lvttr\\.nuget\\packages\\",
+        "outputPath": "E:\\Chuyen nganh\\Dotnet\\PRN231\\Week4\\ReservationWebAPI_Demo\\ViewReservation\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lvttr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Chuyen nganh\\Dotnet\\PRN231\\Week4\\ReservationWebAPI_Demo\\ReservarionWebAPI\\ReservarionWebAPI.csproj": {
+                "projectPath": "E:\\Chuyen nganh\\Dotnet\\PRN231\\Week4\\ReservationWebAPI_Demo\\ReservarionWebAPI\\ReservarionWebAPI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

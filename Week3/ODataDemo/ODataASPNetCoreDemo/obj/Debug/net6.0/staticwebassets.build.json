@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ZIZdbGcQJYxaeiJbjh1YAqgzm1guWEC/IDldgRexJTE=",
+  "Source": "ODataASPNetCoreDemo",
+  "BasePath": "_content/ODataASPNetCoreDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

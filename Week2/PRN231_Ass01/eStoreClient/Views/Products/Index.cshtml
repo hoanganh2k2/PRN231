@@ -1,0 +1,90 @@
+﻿@model IEnumerable<BusinessObject.Models.Product>
+@using Microsoft.AspNetCore.Http
+@{
+    string user = Context.Request.HttpContext.Session.GetString("CurrentUser");
+    string admin = Context.Request.HttpContext.Session.GetString("IsAdmin");
+    string orderId = Context.Request.HttpContext.Session.GetString("OrderId");
+}
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@if(admin!= null)
+{
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+}
+
+<div class="mb-3">
+    <form asp-action="Filter" method="get">
+        <div class="input-group">
+            <input type="text" name="keyword" class="form-control" placeholder="Search products by name or price" value="@ViewBag.Keyword" />
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </form>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitsInStock)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductImage)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.CategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitsInStock)
+            </td>
+            <td>
+                <img src="@Url.Content(item.ProductImage)" alt="@item.ProductName" style="max-width: 100px; max-height: 100px;" />
+            </td>
+            <td>
+                    @if (admin != null)
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.ProductId">Edit</a><span>|</span>
+                    }
+                    <a asp-action="Details" asp-route-id="@item.ProductId">Details</a>
+                    @if (admin != null)
+                    {
+                        <span>|</span>
+                        <a asp-action="Delete" asp-route-id="@item.ProductId">Delete</a>
+                    }
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,54 @@
+﻿@model BusinessObject.Models.Order
+
+@{
+    ViewData["Title"] = "Index";
+}
+@using Microsoft.AspNetCore.Http
+@{
+    string orderId = Context.Request.HttpContext.Session.GetString("OrderId");
+}
+
+<h1>Cart</h1>
+
+@if ( Model.OrderDetails.Count() == 0)
+{
+    <p>Your cart is empty.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderDetails)
+            {
+                <tr>
+                    <td>
+                        <img src="@item.Product.ProductImage" alt="@item..ProductName" style="max-width: 50px; max-height: 50px;" />
+                    </td>
+                    <td>@item.Product.ProductName</td>
+                    <td>
+                            <span>@item.Quantity</span>
+                    </td>
+                    <td>@(item.Product.UnitPrice * item.Quantity)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<a asp-action="Index" asp-controller="Products" class="btn btn-primary mb-4">Continue Shopping</a>
+
+@if (Model != null && Model.OrderDetails.Count() > 0 && orderId != null)
+{
+    <form asp-page-handler="PlaceOrder" method="post">
+        <button class="btn btn-success" type="submit">Place Order</button>
+    </form>
+}
