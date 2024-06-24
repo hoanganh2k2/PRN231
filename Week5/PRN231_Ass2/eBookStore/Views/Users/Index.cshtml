@@ -1,0 +1,91 @@
+﻿@model IEnumerable<BusinessObject.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@using Microsoft.AspNetCore.Http
+@{
+    string admin = Context.Request.HttpContext.Session.GetString("IsAdmin");
+}
+<h1>Index</h1>
+
+@if(admin != null)
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MiddleName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Source)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Role)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Publisher)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MiddleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Source)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Role.RoleDesc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Publisher.City)
+            </td>
+            <td>
+                    @if (admin != null)
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.UserId">Edit</a>
+                        <span>|</span>
+                    }
+                    <a asp-action="Details" asp-route-id="@item.UserId">Details</a>
+                    @if (admin != null)
+                    {
+                        <span>|</span>
+                        <a asp-action="Delete" asp-route-id="@item.UserId">Delete</a>
+                    }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,15 @@
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\DataAccess\bin\Debug\net6.0\DataAccess.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\DataAccess\bin\Debug\net6.0\BusinessObjects.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\DataAccess\bin\Debug\net6.0\BusinessObjects.pdb
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\DataAccess\obj\Debug\net6.0\DataAccess.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll

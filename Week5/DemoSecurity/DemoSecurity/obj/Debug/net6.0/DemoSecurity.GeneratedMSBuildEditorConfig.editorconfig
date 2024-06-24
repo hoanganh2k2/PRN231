@@ -1,0 +1,73 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DemoSecurity
+build_property.RootNamespace = DemoSecurity
+build_property.ProjectDir = E:\Chuyen nganh\Dotnet\PRN231\Week5\DemoSecurity\DemoSecurity\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\Chuyen nganh\Dotnet\PRN231\Week5\DemoSecurity\DemoSecurity
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/Chuyen nganh/Dotnet/PRN231/Week5/DemoSecurity/DemoSecurity/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Chuyen nganh/Dotnet/PRN231/Week5/DemoSecurity/DemoSecurity/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Chuyen nganh/Dotnet/PRN231/Week5/DemoSecurity/DemoSecurity/Pages/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Chuyen nganh/Dotnet/PRN231/Week5/DemoSecurity/DemoSecurity/Pages/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Chuyen nganh/Dotnet/PRN231/Week5/DemoSecurity/DemoSecurity/Pages/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Chuyen nganh/Dotnet/PRN231/Week5/DemoSecurity/DemoSecurity/Pages/Home/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Chuyen nganh/Dotnet/PRN231/Week5/DemoSecurity/DemoSecurity/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Chuyen nganh/Dotnet/PRN231/Week5/DemoSecurity/DemoSecurity/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Chuyen nganh/Dotnet/PRN231/Week5/DemoSecurity/DemoSecurity/Pages/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Chuyen nganh/Dotnet/PRN231/Week5/DemoSecurity/DemoSecurity/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Chuyen nganh/Dotnet/PRN231/Week5/DemoSecurity/DemoSecurity/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Chuyen nganh/Dotnet/PRN231/Week5/DemoSecurity/DemoSecurity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Chuyen nganh/Dotnet/PRN231/Week5/DemoSecurity/DemoSecurity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Chuyen nganh/Dotnet/PRN231/Week5/DemoSecurity/DemoSecurity/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-a5maxm6szk

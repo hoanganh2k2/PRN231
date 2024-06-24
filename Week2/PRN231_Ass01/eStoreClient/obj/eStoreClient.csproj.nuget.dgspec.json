@@ -172,6 +172,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "E:\\Chuyen nganh\\Dotnet\\PRN231\\Week2\\PRN231_Ass01\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "E:\\Chuyen nganh\\Dotnet\\PRN231\\Week2\\PRN231_Ass01\\BusinessObject\\BusinessObject.csproj"
+              },
               "E:\\Chuyen nganh\\Dotnet\\PRN231\\Week2\\PRN231_Ass01\\Repositories\\Repositories.csproj": {
                 "projectPath": "E:\\Chuyen nganh\\Dotnet\\PRN231\\Week2\\PRN231_Ass01\\Repositories\\Repositories.csproj"
               }
@@ -188,6 +191,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.OData": {
+              "target": "Package",
+              "version": "[7.7.5, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"

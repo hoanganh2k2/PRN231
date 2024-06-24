@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServiceDemo";
+
+package greet;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+}
+
+service EmployeeCRUD{
+	rpc SelectAll (Empty) returns (Employees);
+	rpc SelectByID (EmployeeFilter) returns (Employee);
+	rpc Insert (Employee) returns (Empty);
+	rpc Update (Employee) returns (Empty);
+	rpc Delete (EmployeeFilter) returns (Empty);
+}
+
+message Empty{
+
+}
+
+message Employee{
+	int32 employeeID = 1;
+	string firstName = 2;
+	string lastName = 3;
+}
+
+message Employees{
+	repeated Employee items = 1;
+}
+
+message EmployeeFilter{
+	int32 employeeID =1;
+}

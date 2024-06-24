@@ -1,0 +1,83 @@
+﻿@model IEnumerable<BusinessObject.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container-fluid">
+    <h2>Product List</h2>
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table table-sm table-striped table-bordered m-2">
+        <thead>
+            <tr>
+                <th>ProductID</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Update</th>
+                <th>Delete</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<!-- Modals -->
+<div id="modalContainer"></div>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            ShowAllProducts();
+
+            function ShowAllProducts() {
+                $("table tbody").empty();
+                $.ajax({
+                    url: "https://localhost:7258/api/Products",
+                    type: "GET",
+                    contentType: "application/json",
+                    success: function (result, status, xhr) {
+                        $.each(result, function (index, value) {
+                            var row = $("<tr>");
+                            row.append($("<td>").text(value.productId));
+                            row.append($("<td>").text(value.productName));
+                            row.append($("<td>").text(value.unitsInStock));
+                            row.append($("<td>").text(value.unitPrice));
+                            row.append($("<td>").html('<a href="javascript:void(0);" onclick="window.location.replace(\'/Products/Edit/' + value.productId + '\')">Edit</a>'));
+                            row.append($("<td>").html('<a href="javascript:void(0);" class="delete" data-id="' + value.productId + '">Delete</a>'));
+                            row.append($("<td>").html('<a href="javascript:void(0);" onclick="window.location.href=\'/Products/Details/' + value.productId + '\'">Details</a>'));
+                            $("table tbody").append(row);
+                        });
+                    },
+                    error: function (xhr, status, error) {
+                        console.log("Error fetching data:", xhr);
+                    }
+                });
+            }
+
+            $("table").on("click", "a.delete", function () {
+                var productId = $(this).data("id");
+                $.ajax({
+                    url: "https://localhost:7258/api/Products/" + productId,
+                    type: "DELETE",
+                    contentType: "application/json",
+                    success: function (result, status, xhr) {
+                        ShowAllProducts();
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(xhr.responseText);
+                    }
+                });
+            });
+            $("table").on("click", "a.details", function () {
+                var productId = $(this).data("id");
+                window.location.href = "/Product/Details/" + productId;
+            });
+        });
+
+    </script>
+}

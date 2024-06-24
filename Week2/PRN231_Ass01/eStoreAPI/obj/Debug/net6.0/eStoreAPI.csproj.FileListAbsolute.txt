@@ -93,3 +93,8 @@ E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreAPI\obj\Debug\net6.0\refi
 E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreAPI\obj\Debug\net6.0\eStoreAPI.pdb
 E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreAPI\obj\Debug\net6.0\eStoreAPI.genruntimeconfig.cache
 E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreAPI\obj\Debug\net6.0\ref\eStoreAPI.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreAPI\bin\Debug\net6.0\Microsoft.AspNetCore.OData.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreAPI\bin\Debug\net6.0\Microsoft.OData.Core.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreAPI\bin\Debug\net6.0\Microsoft.OData.Edm.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreAPI\bin\Debug\net6.0\Microsoft.Spatial.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreAPI\bin\Debug\net6.0\Newtonsoft.Json.dll

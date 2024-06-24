@@ -315,3 +315,7 @@ E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreClient\obj\Debug\net6.0\r
 E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreClient\obj\Debug\net6.0\eStoreClient.pdb
 E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreClient\obj\Debug\net6.0\eStoreClient.genruntimeconfig.cache
 E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreClient\obj\Debug\net6.0\ref\eStoreClient.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreClient\bin\Debug\net6.0\Microsoft.AspNetCore.OData.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreClient\bin\Debug\net6.0\Microsoft.OData.Core.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreClient\bin\Debug\net6.0\Microsoft.OData.Edm.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week2\PRN231_Ass01\eStoreClient\bin\Debug\net6.0\Microsoft.Spatial.dll

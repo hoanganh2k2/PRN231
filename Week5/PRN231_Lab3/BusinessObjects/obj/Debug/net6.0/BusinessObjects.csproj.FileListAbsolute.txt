@@ -1,0 +1,14 @@
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\BusinessObjects\obj\Debug\net6.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\BusinessObjects\obj\Debug\net6.0\BusinessObjects.AssemblyInfoInputs.cache
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\BusinessObjects\obj\Debug\net6.0\BusinessObjects.AssemblyInfo.cs
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\BusinessObjects\obj\Debug\net6.0\BusinessObjects.csproj.CoreCompileInputs.cache
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\BusinessObjects\obj\Debug\net6.0\BusinessObjects.csproj.AssemblyReference.cache
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\BusinessObjects\bin\Debug\net6.0\BusinessObjects.deps.json
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\BusinessObjects\bin\Debug\net6.0\BusinessObjects.runtimeconfig.json
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\BusinessObjects\bin\Debug\net6.0\BusinessObjects.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\BusinessObjects\bin\Debug\net6.0\BusinessObjects.pdb
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\BusinessObjects\obj\Debug\net6.0\BusinessObjects.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\BusinessObjects\obj\Debug\net6.0\refint\BusinessObjects.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\BusinessObjects\obj\Debug\net6.0\BusinessObjects.pdb
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\BusinessObjects\obj\Debug\net6.0\BusinessObjects.genruntimeconfig.cache
+E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Lab3\BusinessObjects\obj\Debug\net6.0\ref\BusinessObjects.dll

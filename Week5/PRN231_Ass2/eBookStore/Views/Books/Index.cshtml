@@ -1,0 +1,106 @@
+﻿@model IEnumerable<BusinessObject.Models.Book>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@using Microsoft.AspNetCore.Http
+@{
+    string admin = Context.Request.HttpContext.Session.GetString("IsAdmin");
+}
+<h1>Index</h1>
+
+@if(admin != null)
+{
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+}
+
+<div class="mb-3">
+    <form asp-action="Filter" method="get">
+        <div class="input-group">
+            <input type="text" name="keyword" class="form-control" placeholder="Search books by title or price" value="@ViewBag.Keyword" />
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </form>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Publisher)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Advance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Loyalty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sales)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Notes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublishDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Publisher.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Advance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Loyalty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sales)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublishDate)
+            </td>
+            <td>
+                @if(admin != null)
+                {
+                    <a asp-action="Edit" asp-route-id="@item.BookId">Edit</a><span>|</span>
+                }
+                <a asp-action="Details" asp-route-id="@item.BookId">Details</a>
+                @if(admin != null)
+                {
+                    <span>|</span>
+                    <a asp-action="Delete" asp-route-id="@item.BookId">Delete</a>
+                }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
