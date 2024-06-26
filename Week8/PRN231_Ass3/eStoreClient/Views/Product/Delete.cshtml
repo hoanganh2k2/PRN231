@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Delete Flower Bouquet";
+    string JWTToken = Context.Session.GetString("JWToken");
+}
+
+<div class="container-fluid">
+    <div class="d-flex align-items-center justify-content-between">
+        <h2>
+            Are you sure to delete this product?
+
+        </h2>
+        <a href="/Product" class="btn btn-dark">Back</a>
+    </div>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group mt-2">
+                <label for="ProductName">Name</label>
+                <input type="text" class="form-control" id="ProductName" readonly />
+            </div>
+            <div class="form-group mt-2">
+                <label for="Weight">Weight</label>
+                <input type="text" class="form-control" id="Weight" readonly />
+            </div>
+            <div class="form-group mt-2">
+                <label for="UnitPrice">Unit price</label>
+                <input type="number" value="1" min="1" class="form-control" id="UnitPrice" readonly />
+            </div>
+            <div class="form-group mt-2">
+                <label for="UnitsInStock">Units in stock</label>
+                <input type="number" value="1" min="1" class="form-control" id="UnitsInStock" readonly />
+            </div>
+            <div class="form-group mt-2" readonly>
+                <label for="Category">Category</label>
+                <select class="form-select" id="Category" disabled></select>
+            </div>
+            <div class="form-group mt-4">
+                <button id="DeleteButton" class="btn btn-danger w-100">Yes. Delete!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            const params = (new URL(document.location)).searchParams;
+            const id = params.get("id");
+            GetProduct();
+
+            function GetProduct() {
+                $.ajax({
+                    url: `https://localhost:7271/api/Product/${id}`,
+                    type: "GET",
+                    dataType: "json",
+                    success: function (result) {
+                        $("#ProductName").val(result.productName);
+                        $("#Weight").val(result.weight);
+                        $("#UnitPrice").val(result.unitPrice);
+                        $("#UnitsInStock").val(result.unitsInStock);
+                        $("#Category").append("<option value='" + result["category"]["categoryID"] + "'>" + result["category"]["categoryName"] + "</option>");
+                    },
+                    error: function (error) {
+                        console.log(error);
+                        // Redirect to home
+                        window.location.href = "/Product";
+                    }
+                })
+            }
+
+            $("#DeleteButton").click(function () {
+                $.ajax({
+                    url: `https://localhost:7271/api/Product/${id}`,
+                    type: "Delete",
+                    contentType: "application/json",
+                    beforeSend: function (xhr) {
+                        xhr.setRequestHeader("Authorization", "Bearer " + "@JWTToken");
+                    },
+                    success: function (result, status, xhr) {
+                        alert("Delete successfully");
+                        // Redirect to home
+                        window.location.href = "/Product";
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(xhr)
+                        alert("Delete failed");
+                    }
+                })
+            })
+        })
+    </script>
+}
