@@ -10,6 +10,8 @@ namespace BusinessObject.Model
         public DateTime OrderDate { get; set; }
         public DateTime? ShippedDate { get; set; }
         [Required]
+        public int Total { get; set; }
+        [Required]
         public string Freight { get; set; }
         [ForeignKey("Customer")]
         public string CustomerID { get; set; }

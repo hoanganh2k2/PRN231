@@ -19,7 +19,6 @@
                 <th>Order date</th>
                 <th>Ship date</th>
                 <th>Amount</th>
-                <th>Status</th>
                 <th>Freight</th>
                 <th></th>
             </tr>
@@ -59,13 +58,6 @@
                                 appendElement.append($("<td>").html(value["orderDate"] ? new Date(value["orderDate"]).toLocaleString() : "N/a"));
                                 appendElement.append($("<td>").html(value["shippedDate"] ? new Date(value["shippedDate"]).toLocaleString() : "N/a"));
                                 appendElement.append($("<td>").html(formatter.format(value["total"])));
-                                if (value["orderStatus"] === 0) {
-                                    appendElement.append($("<td>").html("<div class='text-info'>Pending</div>"));
-                                } else if (value["orderStatus"] === 1) {
-                                    appendElement.append($("<td>").html("<div class='text-success'>Shipped</div>"));
-                                } else if (value["orderStatus"] === 2) {
-                                    appendElement.append($("<td>").html("<div class='text-danger'>Cancelled</div>"));
-                                }
                                 appendElement.append($("<td>").html(value["freight"]));
                                 appendElement.append($("<td>").html("<a class='btn btn-primary' href='/MyOrder/Detail?id=" + value["orderID"] + "'>Detail</a>"));
                             })

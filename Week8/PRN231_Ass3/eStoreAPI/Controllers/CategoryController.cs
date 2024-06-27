@@ -1,13 +1,11 @@
 ﻿using BusinessObject.Model;
-using eStoreAPI.Models;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Repositories;
 using Repositories.impl;
 
 namespace eStoreAPI.Controllers
 {
-    [Authorize(Roles = UserRoles.Admin)]
+    //[Authorize(Roles = UserRoles.Admin)]
     [Route("api/[controller]")]
     [ApiController]
     public class CategoryController : ControllerBase

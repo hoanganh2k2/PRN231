@@ -1,6 +1,5 @@
 ﻿using BusinessObject.Model;
 using eStoreAPI.Models;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Repositories;
 using Repositories.impl;
@@ -15,11 +14,11 @@ namespace eStoreAPI.Controllers
         private readonly IOrderDetailRepository orderDetailRepository = new OrderDetailRepository();
         private readonly IProductRepository productRepository = new ProductRepository();
 
-        [Authorize(Roles = UserRoles.Admin)]
+        //[Authorize(Roles = UserRoles.Admin)]
         [HttpGet]
         public ActionResult<IEnumerable<Order>> GetOrders() => Ok(repository.GetOrders());
 
-        [Authorize(Roles = UserRoles.Customer)]
+        //[Authorize(Roles = UserRoles.Customer)]
         [HttpGet("customer/{id}")]
         public ActionResult<IEnumerable<Order>> GetAllOrdersByCustomerId(string id)
         {
@@ -32,7 +31,7 @@ namespace eStoreAPI.Controllers
             return Ok(listOrder);
         }
 
-        [Authorize(Roles = UserRoles.Customer)]
+        //[Authorize(Roles = UserRoles.Customer)]
         [HttpGet("customer/detail/{id}")]
         public ActionResult<Order> GetOrderDetailById(int id)
         {
@@ -47,7 +46,7 @@ namespace eStoreAPI.Controllers
         }
 
 
-        [Authorize(Roles = UserRoles.Admin)]
+        //[Authorize(Roles = UserRoles.Admin)]
         [HttpGet("{id}")]
         public ActionResult<Order> GetOrderById(int id)
         {
@@ -61,7 +60,7 @@ namespace eStoreAPI.Controllers
             return Ok(order);
         }
 
-        [Authorize(Roles = "Admin, Customer")]
+        //[Authorize(Roles = "Admin, Customer")]
         [HttpPost]
         public ActionResult<Order> PostOrder(PostOrder postOrder)
         {
@@ -81,6 +80,7 @@ namespace eStoreAPI.Controllers
             {
                 OrderDate = postOrder.OrderDate,
                 ShippedDate = null,
+                Total = postOrder.Total,
                 Freight = postOrder.Freight,
                 CustomerID = postOrder.CustomerID
             };
@@ -103,7 +103,7 @@ namespace eStoreAPI.Controllers
             return Ok(savedOrder);
         }
 
-        [Authorize(Roles = UserRoles.Admin)]
+        //[Authorize(Roles = UserRoles.Admin)]
         [HttpPut("shipped/{id}")]
         public IActionResult PutOrderShipped(int id)
         {
@@ -117,7 +117,7 @@ namespace eStoreAPI.Controllers
             return NoContent();
         }
 
-        [Authorize(Roles = UserRoles.Admin)]
+        //[Authorize(Roles = UserRoles.Admin)]
         [HttpPut("cancel/{id}")]
         public IActionResult PutOrderCancel(int id)
         {

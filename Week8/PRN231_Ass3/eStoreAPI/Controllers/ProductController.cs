@@ -1,6 +1,5 @@
 ﻿using BusinessObject.Model;
 using eStoreAPI.Models;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Repositories;
 using Repositories.impl;
@@ -22,7 +21,7 @@ namespace eStoreAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult<Product> GetProductById(int id) => repository.GetProductById(id);
 
-        [Authorize(Roles = UserRoles.Admin)]
+        //[Authorize(Roles = UserRoles.Admin)]
         [HttpPost]
         public IActionResult PostProduct(PostProduct postProduct)
         {
@@ -42,7 +41,7 @@ namespace eStoreAPI.Controllers
             return NoContent();
         }
 
-        [Authorize(Roles = UserRoles.Admin)]
+        //[Authorize(Roles = UserRoles.Admin)]
         [HttpDelete("{id}")]
         public IActionResult DeleteProduct(int id)
         {
@@ -62,7 +61,7 @@ namespace eStoreAPI.Controllers
             return NoContent();
         }
 
-        [Authorize(Roles = UserRoles.Admin)]
+        //[Authorize(Roles = UserRoles.Admin)]
         [HttpPut("{id}")]
         public IActionResult PutProduct(int id, PostProduct postProduct)
         {

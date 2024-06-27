@@ -93,8 +93,8 @@
                     url: "https://localhost:7271/api/Product",
                     type: "GET",
                     success: function (result, status, xhr) {
-                        $.each(listActiveProducts, function (key, item) {
-                            $("#Product").append("<option value='" + item["productID"] + "'>" + item["productName"] + " - " + item["unitsInStock"] + "</option>");
+                        $.each(result, function (key, item) {
+                            $("#Product").append("<option value='" + item["productID"] + "'>" + item["productName"] + " - " + item["unitPrice"] + " ( "+ item["unitsInStock"]+" )" + "</option>");
                         })
                     },
                     error: function (xhr, status, error) {
@@ -114,7 +114,7 @@
                 }
 
                 $.ajax({
-                    url: "https://localhost:7271/api/Products/" + productID,
+                    url: "https://localhost:7271/api/Product/" + productID,
                     type: "GET",
                     beforeSend: function (xhr) {
                         xhr.setRequestHeader("Authorization", "Bearer " + "@JWTToken");
@@ -205,11 +205,12 @@
                         "unitPrice": item["unitPrice"]
                     }
                 })
+                const vietnamTimeZone = 'Asia/Ho_Chi_Minh';
                 $.ajax({
                     url: "https://localhost:7271/api/Order",
                     type: "POST",
                     data: JSON.stringify({
-                        orderDate: new Date().toISOString(),
+                        orderDate: new Date().toLocaleString('sv-SE', { timeZone: vietnamTimeZone, hour12: false }).replace(' ', 'T'),
                         total: amount,
                         freight: $("#Freight").val(),
                         customerID: "@USERID",
