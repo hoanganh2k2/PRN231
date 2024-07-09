@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\Chuyen nganh\Dotnet\PRN231\Week5\PRN231_Ass2\eBookStore
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/Chuyen nganh/Dotnet/PRN231/Week5/PRN231_Ass2/eBookStore/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Chuyen nganh/Dotnet/PRN231/Week5/PRN231_Ass2/eBookStore/Views/Authen/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVuXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

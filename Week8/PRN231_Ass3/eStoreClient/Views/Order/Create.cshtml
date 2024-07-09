@@ -97,8 +97,8 @@
                     url: "https://localhost:7271/api/Product",
                     type: "GET",
                     success: function (result, status, xhr) {
-                        $.each(listActiveProducts, function (key, item) {
-                            $("#Product").append("<option value='" + item["productID"] + "'>" + item["productName"] + " - " + item["unitsInStock"] + "</option>");
+                        $.each(result, function (key, item) {
+                            $("#Product").append("<option value='" + item["productID"] + "'>" + item["productName"] + " - " + item["unitPrice"] + " ( " + item["unitsInStock"] + " )" + "</option>");
                         })
                     },
                     error: function (xhr, status, error) {

@@ -1,0 +1,17 @@
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\bin\Debug\net7.0\Repositories.deps.json
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\bin\Debug\net7.0\Repositories.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\bin\Debug\net7.0\Repositories.pdb
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\bin\Debug\net7.0\BusinessObject.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\bin\Debug\net7.0\DataAccess.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\bin\Debug\net7.0\BusinessObject.pdb
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\bin\Debug\net7.0\DataAccess.pdb
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\obj\Debug\net7.0\Repositories.csproj.AssemblyReference.cache
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\obj\Debug\net7.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\obj\Debug\net7.0\Repositories.AssemblyInfoInputs.cache
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\obj\Debug\net7.0\Repositories.AssemblyInfo.cs
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\obj\Debug\net7.0\Repositories.csproj.CoreCompileInputs.cache
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\obj\Debug\net7.0\Repositories.csproj.CopyComplete
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\obj\Debug\net7.0\Repositories.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\obj\Debug\net7.0\refint\Repositories.dll
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\obj\Debug\net7.0\Repositories.pdb
+E:\Chuyen nganh\Dotnet\PRN231\Week9\TrialTest\Repositories\obj\Debug\net7.0\ref\Repositories.dll
